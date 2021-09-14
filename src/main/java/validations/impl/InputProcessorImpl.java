@@ -76,7 +76,7 @@ public class InputProcessorImpl implements InputProcessor {
         Set<Integer> groupIds;
 
         if (!hasDisjunctionOperator) {
-            allIds.addAll(tokenIndexes.get(groupsDividedByDisjunctionOperator.get(0)));
+            allIds.addAll(tokenIndexes.get(groupsDividedByDisjunctionOperator.get(0).toLexicographicString()));
             for (Expression<String> child : groupsDividedByDisjunctionOperator) {
                 allIds.retainAll(tokenIndexes.get(child.toLexicographicString()));
             }

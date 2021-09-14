@@ -1,5 +1,5 @@
-import validations.InputProcessor;
-import validations.impl.InputProcessorImpl;
+import service.InputProcessor;
+import service.impl.InputProcessorImpl;
 
 import java.util.Scanner;
 
